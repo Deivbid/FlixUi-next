@@ -39,7 +39,7 @@ const Auth = () => {
         redirect: false,
         callbackUrl: '/',
       });
-
+      console.log('Coño si paso por aqui pues');
       router.push('/');
     } catch (error) {
       console.log(error);
