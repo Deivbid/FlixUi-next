@@ -7,6 +7,7 @@ import { signIn } from 'next-auth/react';
 
 import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
+import HeadTitle from '@/components/HeadTitle';
 
 enum AccountVariant {
   LOGIN = 'LOGIN',
@@ -56,6 +57,7 @@ const Auth = () => {
 
   return (
     <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
+      <HeadTitle />
       <div className="bg-black w-full h-full lg:bg-opacity-50">
         <nav className="px-12 py-5">
           <img src="/images/logo.png" className="h-12" alt="netflix-logo" />

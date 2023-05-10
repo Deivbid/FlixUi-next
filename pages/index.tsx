@@ -1,6 +1,7 @@
 import Billboard from '@/components/Billboard';
 import InfoModal from '@/components/InfoModal';
 import MovieList from '@/components/MovieList';
+import HeadTitle from '@/components/HeadTitle';
 import Navbar from '@/components/Navbar';
 import useFavoriteMovies from '@/hooks/useFavoritesMovies';
 import useInfoModal from '@/hooks/useInfoModal';
@@ -31,6 +32,7 @@ const Home = () => {
   const { isOpen, closeModal } = useInfoModal();
   return (
     <>
+      <HeadTitle />
       <InfoModal visible={isOpen} onClose={closeModal} />
       <Navbar />
       <Billboard />

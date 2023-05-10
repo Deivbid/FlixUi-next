@@ -39,7 +39,7 @@ NEXTAUTH_SECRET= // same as above
 
 ## Screenshots
 
-![Home page](/public/images/home.png)
+![Home page](/public/images/Home.png)
 _The home page provides users with a list of popular movies and TV shows._
 
 ![Login page](/public/images/Login.png)

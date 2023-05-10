@@ -2,6 +2,7 @@ import useCurrentUser from '@/hooks/useCurrentUser';
 import { NextPageContext } from 'next';
 import { getSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
+import HeadTitle from '@/components/HeadTitle';
 
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
@@ -25,6 +26,7 @@ const Profiles = () => {
 
   return (
     <div className="flex items-center h-full justify-center">
+      <HeadTitle />
       <div className="flex flex-col">
         <h1 className="text-3xl md:text-6xl text-white text-center">
           Who is watching?
