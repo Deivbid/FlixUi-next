@@ -1,9 +1,9 @@
+import Navbar from '@/components/Navbar';
 import { NextPageContext } from 'next';
-import { getSession, signOut } from 'next-auth/react';
+import { getSession } from 'next-auth/react';
 
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
-  console.log('Veamos:', session);
   if (!session) {
     return {
       redirect: {
@@ -21,14 +21,7 @@ export async function getServerSideProps(context: NextPageContext) {
 const Home = () => {
   return (
     <>
-      <h1 className="text-2xl text-green-500">Netflix Clone</h1>
-      <button
-        onClick={() => signOut()}
-        className="border-cyan-500 h-10 w-full bg-white"
-      >
-        {' '}
-        Sign out{' '}
-      </button>
+      <Navbar />
     </>
   );
 };
