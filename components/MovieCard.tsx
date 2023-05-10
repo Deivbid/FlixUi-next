@@ -1,6 +1,7 @@
 import React from 'react';
 import { Movie } from './MovieList';
 import { BsPlayFill } from 'react-icons/bs';
+import FavoriteButton from './FavoriteButton';
 
 interface MovieCardProps {
   movie: Movie;
@@ -25,6 +26,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
             <div className="cursor-pointer w-6 h-6 lg:w-10 lg:h-10 bg-white rounded-full flex justify-center items-center transition hover:bg-neutral-300">
               <BsPlayFill size={30} />
             </div>
+            <FavoriteButton movieId={movie?.id} />
           </div>
 
           <p className="text-green-400 font-semibold mt-4">
