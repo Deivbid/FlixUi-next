@@ -16,6 +16,10 @@
 
 - **Data fetching:** The app uses SWR for data fetching, making it fast and efficient.
 
+## Live Demo
+
+[Live Demo](https://flix-ui-next.vercel.app/)
+
 ## Getting started
 
 To get started with My Netflix Clone, follow these steps:
